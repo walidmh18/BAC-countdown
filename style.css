@@ -1,0 +1,122 @@
+
+@import url(https://fonts.googleapis.com/css?family=Montserrat:100,200,300,regular,500,600,700,800,900,100italic,200italic,300italic,italic,500italic,600italic,700italic,800italic,900italic);
+*{
+    padding: 0;
+    margin: 0;
+    font-family: 'Montserrat' , sans-serif;
+    overflow: hidden;
+    user-select: none;
+}
+
+:root{
+    --primary-color: #72a1bc;
+    --dark-color: #181818;
+    --light-color: #dcdcdc;
+
+}
+
+ /* ---- particles.js container ---- */
+#particles-js {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: #72a1bc;
+  background-image: url("");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 50% 50%;
+  z-index: 0;
+} 
+
+.background{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    z-index: 1;
+    width: 100%;
+    height: 100vh;
+    justify-content: space-between;
+    padding: 3rem 0 2rem;
+    box-sizing: border-box;
+    align-items: center;
+}
+.container *{
+    z-index: 2;
+    color: var(--dark-color);
+}
+.title h1{
+    font-size: 3rem;
+}
+.countdown , .socialLinks , .title{
+    display: flex;
+    justify-content: space-around;
+    max-width: 80em;
+    align-items: center;
+    width: 100%;
+}
+.countdown{
+    margin-bottom: 5rem;
+}
+.countdown span, .tp{
+    font-weight: 500;
+    font-size: 4em;
+}
+.countdown div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.countdown h2{
+    font-size: 1rem;
+}
+.socialLinks a i{
+    color: var(--dark-color);
+ 
+    font-size: 2rem;
+    transition: 0.3s;
+}
+.socialLinks a i:hover{
+    color: var(--light-color);
+}
+
+.socialLinks{
+    justify-content: center;
+    gap: 4em;
+    margin: 0 20vw;
+}
+.title h1{
+    font-size: 3vw;
+}
+@media (max-width:1000px) {
+    .title h1{
+        font-size: 5vw;
+    }
+}
+@media (max-width:768px) {
+    .countdown span, .tp{
+        font-size: 3em;
+    } 
+    .title h1{
+        font-size: 6vw;
+    }
+    .socialLinks{
+        gap: calc(4vw + 5px);
+
+    }
+}
+@media (max-width:500px) {
+    .countdown span, .tp{
+        font-size: 2em;
+    } 
+    .title h1{
+        font-size: 7vw;
+        margin-top: 3rem;
+    }
+    .socialLinks{
+    }
+}
