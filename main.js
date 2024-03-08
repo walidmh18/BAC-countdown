@@ -3,7 +3,7 @@
 
 // countdown
 
-const bacDate = new Date('2023-06-11T08:00:00+01:00').getTime()
+const bacDate = new Date('2024-06-09T08:00:00+01:00').getTime()
 console.log(bacDate);
 
 
